@@ -2,18 +2,18 @@ import React from "react";
 
 import UsersList from "../components/UsersList";
 
-const users = [
-  {
-    id: "u1",
-    name: "Ken Farzali",
-    image:
-      "https://media-exp1.licdn.com/dms/image/C4D03AQFhs5L2vT3mBg/profile-displayphoto-shrink_100_100/0/1562207797477?e=1623283200&v=beta&t=rn3mYgJ9UeLMt_1gAOOoH4bb-E-itFu9GgGRNeN68-g",
-    placeCount: 5,
-  },
-];
-
 const Users = () => {
-  return <UsersList items={users} />;
+  const USERS = [
+    {
+      id: "u1",
+      name: "Max Schwarz",
+      image:
+        "https://images.pexels.com/photos/839011/pexels-photo-839011.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
+      places: 3,
+    },
+  ];
+
+  return <UsersList items={USERS} />;
 };
 
 export default Users;
